@@ -41,7 +41,7 @@ services:
     depends_on:
       - db
       - wordpress
-    image: duffn/wpi-cli-gatsby:latest
+    image: duffn/wp-cli-gatsby:latest
     # While pulling the image will be faster, if you like, you can build the
     # image locally, but uncommenting the lines below and commenting out the
     # `image` line above.
