@@ -27,7 +27,7 @@ The default WordPress admin credentials are `admin` and `secret`.
 ### Automatically
 
 ```bash
-bash -c "$(curl https://github.com/duffn/gatsby-headless-wordpress-starter/blob/main/install.sh)"
+bash -c "$(curl https://raw.githubusercontent.com/duffn/gatsby-headless-wordpress-starter/main/install.sh)"
 ```
 
 ### Manually
@@ -35,7 +35,7 @@ bash -c "$(curl https://github.com/duffn/gatsby-headless-wordpress-starter/blob/
 It's a good idea to download and review unknown scripts from the internet. So, you may want to clone this repository and run the script instead.
 
 ```bash
-wget https://github.com/duffn/gatsby-headless-wordpress-starter/blob/main/install.sh
+wget https://raw.githubusercontent.com/duffn/gatsby-headless-wordpress-starter/main/install.sh
 # Review the script here.
 bash install.sh
 ```

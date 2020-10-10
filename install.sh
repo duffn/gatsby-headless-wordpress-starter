@@ -2,9 +2,9 @@
 
 set -e
 
-REMOTE="git@github.com:duffn/gatsby-wordpress-docker.git"
+REMOTE="git@github.com:duffn/gatsby-headless-wordpress-starter.git"
 BRANCH="main"
-LOCAL="gatsby-wordpress-docker"
+LOCAL="gatsby-headless-wordpress-starter"
 
 command_exists() {
   command -v "$@" >/dev/null 2>&1
