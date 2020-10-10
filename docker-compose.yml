@@ -41,12 +41,12 @@ services:
     depends_on:
       - db
       - wordpress
-    image: duffn/gatsby-wp-cli:latest
+    image: duffn/wpi-cli-gatsby:latest
     # While pulling the image will be faster, if you like, you can build the
     # image locally, but uncommenting the lines below and commenting out the
     # `image` line above.
     # build:
-    #   context: ./wp-cli
+    #   context: ./wp-cli-gatsby
     volumes:
       - wp_data:/var/www/html
 
