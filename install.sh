@@ -31,6 +31,7 @@ main() {
     --config receive.fsckobjects=false \
     --config fetch.fsckobjects=false \
     --branch "$BRANCH" "$REMOTE" "$LOCAL"
+  cd "$LOCAL"
   docker-compose up --build
 }
 
