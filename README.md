@@ -37,7 +37,10 @@ It's a good idea to download and review unknown scripts from the internet. So, y
 ```bash
 wget https://raw.githubusercontent.com/duffn/gatsby-headless-wordpress-starter/main/install.sh
 # Review the script here.
+# If you want to use MySQL.
 bash install.sh
+# Or if you want to use MariaDB.
+bash install.sh --mariadb
 ```
 
 The script doesn't do anything besides check for required dependencies and run `docker-compose`, so you can just as well clone the repository and run `docker-compose` yourself.
@@ -45,14 +48,23 @@ The script doesn't do anything besides check for required dependencies and run `
 ```bash
 git clone git@github.com/duffn/gatsby-headless-wordpress-starter
 cd gatsby-headless-wordpress-starter
-docker-compose up
+# If you want to use MySQL.
+docker-compose -f docker-compose.yml -f docker-compose.mysql.yml up
+# Or if you want to use MariaDB.
+docker-compose -f docker-compose.yml -f docker-compose.mariadb.yml up
+```
+
+**Note**: If you run the install script and then decide to switch database engines and try again, make sure you stop the containers and delete the database volume. This will delete anything you've done in WordPress!
+
+```bash
+docker-compose stop
+docker volume rm gatsby-headless-wordpress-starter_db_data
 ```
 
 ## TODO
 
 - [ ] Test on Linux.
 - [ ] Test on Windows.
-- [ ] Allow option for MariaDB as a database.
 
 ## License
 
