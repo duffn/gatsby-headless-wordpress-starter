@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  db:
+    image: mariadb:10.5
+    environment:
+      MYSQL_ROOT_PASSWORD: gtsb-wp-dckr
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: gtsb-wp-dckr-user
+    restart: always
+    volumes:
+      - "db_data:/var/lib/mysql"
+
+volumes:
+  db_data:
