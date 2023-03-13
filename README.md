@@ -1,3 +1,7 @@
+# Unmaintained
+
+_This repository is archived and unmaintained. Use at your own risk._
+
 # Gatsby Headless WordPress Starter
 
 This is the fastest and easiest way to get a development environment up and running with headless WordPress and Gatsby.
